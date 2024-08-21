@@ -50,9 +50,9 @@ To compile and run the game, use the following commands in a terminal:
 
 ```bash
 
-gcc -o treasure_hunt treasure_hunt.c
+gcc -Wall -o game main.c
 
-./treasure_hunt
+./game
 
 ```
 
