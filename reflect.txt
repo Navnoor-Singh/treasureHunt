@@ -1,0 +1,40 @@
+*****************************************************************************
+                               Reflection
+                             Workshop - #7
+Full Name  : Navnoor Singh
+Student ID#: 160821211
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+
+
+1. There are several merits of using structures in  C
+   1: By using structures, variables become more self-descriptive. Some variables like the position that we used in this workshop, made more sense when put into a struct named PlayerInfo, so while reading or walking through the code, a reader can see a player.position (which clearly defines that it's a variable that shows the player's position.)
+   2: It's easier to manage variables in a struct than just declaring them randomly. It looks nice and is more readable.
+   3: For example: here, it astonishes me how clearly it defines data in a given space.
+
+                    struct PlayerInfo
+                    {
+                       char playerSymbol;
+                       int numberofLives;
+                       int numberofTreasures;
+                       int history[MAX_PATH_LENGTH];
+                       int treasureFound;
+                       int position;
+                 
+                    };
+
+    in new code editors like Xcode(for MAC) and visual studio(for WINDOWS), whenever we type a struct name, it automatically pop-ups the list of members to choose from, which is far easier to use and track.
+
+
+
+2. For upgrading this piece of code, 
+       First, we will need an array of a struct called GameHistory to store data about the history of previous games.
+
+       Secondly, will also need a kill switch rather than the automatic ending of the game, for instance, we can ask the user if he wants to play another round and if yes we'll keep accumulating the data until he triggers the kill switch.
+
+3. For this specific workshop 7, when I saw the code output in the pdf, I wondered how to assemble the "gamepath", I think for at least 30mins then I thought it was an array, but unfortunately that was not the case, apparently we needed an array but not for printing, I struggled for something which now looking at it after completing is not that hard. I looked on the internet for weird answers, then I tried printing printf statements between the logic to track values, then I found a bug that I would not be able to find without the white-box debugging. In the end, I came up with this solution we should iterate the times our path length is and check every single time if it's a bomb, treasure, nothing, or both and instead of it all was it undiscovered
+in the end, it was fun as well as challenging but it definately a step up from the previous workshops.
