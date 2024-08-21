@@ -48,27 +48,27 @@ The **Treasure Hunt** game is a simple command-line game developed in C. The obj
 
 To compile and run the game, use the following commands in a terminal:
 
-````
+```bash
 
 gcc -o treasure_hunt treasure_hunt.c
 
 ./treasure_hunt
 
-````
+```
 
 **Example Output**
 
-````
+```bash
 
-\================================
+================================
 
 Treasure Hunt!
 
-\================================
+================================
 
 PLAYER Configuration
 
-\--------------------
+--------------------
 
 Enter a single character to represent the player: @
 
@@ -78,7 +78,7 @@ Player configuration set-up is complete
 
 GAME Configuration
 
-\------------------
+------------------
 
 Set the path length (a multiple of 5 between 10-70): 20
 
@@ -86,7 +86,7 @@ Set the limit for number of moves allowed: 15
 
 BOMB Placement
 
-\--------------
+--------------
 
 Enter the bomb positions in sets of 5 where a value
 
@@ -106,7 +106,7 @@ BOMB placement set
 
 TREASURE Placement
 
-\------------------
+------------------
 
 Enter the treasure placements in sets of 5 where a value
 
@@ -126,11 +126,11 @@ TREASURE placement set
 
 GAME configuration set-up is complete...
 
-\------------------------------------
+------------------------------------
 
 TREASURE HUNT Configuration Settings
 
-\------------------------------------
+------------------------------------
 
 Player:
 
@@ -150,11 +150,11 @@ Bombs : 10011010100110010100
 
 Treasure : 00101001101010010001
 
-\====================================
+====================================
 
 ~ Get ready to play TREASURE HUNT! ~
 
-\====================================
+====================================
 
 ...
 
@@ -168,13 +168,13 @@ Lives: 4 | Treasures: 2 | Moves Remaining: 12
 
 ##################
 
-\# Game over! #
+# Game over! #
 
 ##################
 
 You should play again and try to beat your score!
 
-````
+```
 
 **Authorship and Licensing**
 
